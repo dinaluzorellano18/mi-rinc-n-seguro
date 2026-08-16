@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Poemas y Escritos</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f9f6f0;
+            color: #2c2c2c;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            color: #3a2e2b;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            font-style: italic;
+            color: #6e5d59;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #e2dcd5;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #3a2e2b;
+            font-size: 1.5rem;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            background-color: #3a2e2b;
+            color: #ffffff;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #8c7b75;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rincón Poético</h1>
+        <p class="subtitle">Selecciona una categoría para explorar los escritos</p>
+    </header>
+
+    <main class="container">
+        <a href="amor.html" class="card">Amor</a>
+        <a href="odio.html" class="card">Odio</a>
+        <a href="musica.html" class="card">Música</a>
+        <a href="frases.html" class="card">Frases</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mis Poemas. Todos los derechos a dina luz orellano esmeral.</p> 
+    </footer>
+
+</body>
+</html>
